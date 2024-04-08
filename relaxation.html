@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" href="relax.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="t2.css" />
+    <link rel="stylesheet" href="test.css" />
+    <title>ZenFlow</title>
+  </head>
+  
+    <div class="relative w-full bg-white">
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8"
+      >
+        <div class="inline-flex items-center space-x-2">
+          <span>
+            <img src="logo.jpg" alt="Logo" style="width: 55px; height: 50px; border-radius: 50%;">
+          </span>
+          <span class="font-bold">ZenFlow</span>
+        </div>
+        <div class="hidden grow items-start lg:flex">
+          <ul class="ml-12 inline-flex space-x-8">
+            <li>
+              <a
+                href="index.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="todo.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                To-Do List
+              </a>
+            </li>
+            <li>
+              <a
+                href="events.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Event Manager
+              </a>
+            </li>
+            <li>
+              <a
+                href="mood.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+              Dashboard
+              </a>
+            </li>
+            <li>
+              <a
+                href="relaxation.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Relaxation
+              </a>
+            </li>
+            <li>
+              <a
+                href="memory.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Memory Enhancement
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="hidden lg:block">
+          <div flex flex-row>
+            <div flex flex-col flex-1><img
+              
+            /></divflex>
+          </div>
+          <div flex flex-col flex-1><span class="flex flex-col">
+            
+          </span></divflex>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="relaxbody">
+   
+   <button class="popup-button" id="openModalBtn">Focused Breathing</button>
+
+    <div id="modalOverlay" class="modal-overlay">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close-btn">&times;</span>
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/564x/ee/b1/f1/eeb1f19b27299f1bd824b0def16815e4.jpg"
+            alt="Placeholder Image"
+          />
+          <div class="content">
+            <h2>Take a moment to breathe...</h2>
+            <!-- <p>
+              In our fast-paced lives, finding moments of focus can be
+              challenging. However, one powerful tool that often goes overlooked
+              is simply focusing on our breath. Conscious breathing not only
+              calms the mind but also enhances our ability to concentrate and
+              stay present in the moment.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="t2.js"></script>
+   <main class="relaxmain">
+      <div class="relaxdiv"></div>
+      
+   </main>
+   <section>
+       <p class="relaxp">Breathe in through the nose as the circle expands <br>
+          hold, and release through the mouth as it contracts. <br> repeat as needed.</p> 
+       <label for="number" class="relaxlabel">Adjust timing of animation in seconds</label>
+       <input type="number" id="number" value="8" min="1" class="relaxinput">
+   </section>
+
+ <script src="relaxation.js"></script>
+  </body>
+</html>
+<!-- 
+  <div class="card">
+        <img
+          src="https://i.pinimg.com/236x/4c/44/49/4c44496ecda165cd92c6ec023d3e5343.jpg"
+          alt="Placeholder Image"
+        />
+        <div class="content">
+          <h2>Take a moment to breathe...</h2>
+          <p>
+            In our fast-paced lives, finding moments of focus can be challenging.
+            However, one powerful tool that often goes overlooked is simply
+            focusing on our breath. Conscious breathing not only calms the mind
+            but also enhances our ability to concentrate and stay present in the
+            moment.
+          </p>
+        </div>
+      </div>
+ -->

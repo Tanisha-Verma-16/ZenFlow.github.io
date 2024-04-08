@@ -1,0 +1,189 @@
+.relaxbody {
+  background: linear-gradient(
+    135deg,
+    #03001e 0%,
+    #d8a5fa 0%,
+    #f7b2e4 50%,
+    #fdeff9 100%
+  );
+}
+:root {
+  --primary-color: rgb(120, 2, 199);
+  --secondary-color: rgb(224, 11, 171);
+  --large: 200px;
+  --small: 10px;
+  --timing: 8s;
+}
+
+.relaxbody {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+}
+
+.relaxmain,
+.relaxsection {
+  height: 300px;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.relaxsection {
+  height: auto;
+}
+
+.relaxdiv {
+  background-color: var(--primary-color);
+  width: var(--small);
+  height: var(--small);
+  border-radius: calc(var(--small) / 2);
+  display: inline-block;
+  animation: breath var(--timing) ease infinite none running;
+}
+
+.relaxinput {
+  margin: 20px 0;
+  height: 30px;
+  width: 50px;
+  font-size: 1.25em;
+  /* background-color: rgb(250, 99, 200); */
+  background-color: white;
+  color: black;
+  padding-left: 5px;
+}
+
+.relaxh1,
+.relaxp,
+.relaxlabel {
+  color: black;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.relaxlabel {
+  margin-left: 10%;
+}
+
+@keyframes breath {
+  25%,
+  50% {
+    background-color: var(--secondary-color);
+    width: var(--large);
+    height: var(--large);
+    border-radius: calc(var(--large) / 2);
+  }
+}
+.card {
+  width: 300px;
+  max-width: 100%;
+  background-color: rgb(248, 197, 244);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card .content {
+  padding: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+.card p {
+  color: #000000;
+  font-size: 14px;
+}
+/* Expanding and Contracting Animation */
+@keyframes expandContract {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card:hover {
+  animation: expandContract 0.5s ease-in-out infinite;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Shaking Animation
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.card:hover {
+  animation: shake 0.5s ease-in-out infinite;
+} */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+@keyframes expandContract {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Adjust the scale for a smoother effect */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card:hover {
+  animation: expandContract 1.5s ease-in-out infinite; /* Increase the duration to slow down the animation */
+}
+
+.relaxmain {
+  flex: 1;
+  margin-right: 20px; /* Adjust margin as needed */
+}

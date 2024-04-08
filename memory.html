@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="memory.css">
+    
+    <script src="memory.js" defer></script>
+    <title>ZenFlow</title>
+  </head>
+  <body>
+    <div class="relative w-full bg-white">
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8"
+      >
+        <div class="inline-flex items-center space-x-2">
+          <span>
+            <img src="logo.jpg" alt="Logo" style="width: 55px; height: 50px; border-radius: 50%;">
+          </span>
+          <span class="font-bold">ZenFlow</span>
+        </div>
+        <div class="hidden grow items-start lg:flex">
+          <ul class="ml-12 inline-flex space-x-8">
+            <li>
+              <a
+                href="index.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="todo.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                To-Do List
+              </a>
+            </li>
+            <li>
+              <a
+                href="events.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Event Manager
+              </a>
+            </li>
+            <li>
+              <a
+                href="mood.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+              Dashboard
+              </a>
+            </li>
+            <li>
+              <a
+                href="relaxation.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Relaxation
+              </a>
+            </li>
+            <li>
+              <a
+                href="memory.html"
+                class="text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Memory Enhancement
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="hidden lg:block">
+          <div flex flex-row>
+            <div flex flex-col flex-1>
+              
+            </divflex>
+          </div>
+          <div flex flex-col flex-1><span class="flex flex-col">
+            
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="game">
+      
+      
+        <div class="controls">
+            <button class = "button">Start</button>
+            
+            <div class="stats">
+                <div class="moves">0 moves</div>
+                <div class="timer">Time: 0 sec</div>
+            </div>
+        </div>
+        <div class="board-container">
+        </div>
+            <div class="board" data-dimension="4"></div>
+            <div class="win">You won!</div>
+        </div>
+    </div>
+    <div class="cardo" id = "instruct" >
+      <img
+        src="https://i.pinimg.com/236x/e9/6f/df/e96fdf1abb04bb20bfabcc277c9a2dad.jpg"
+        alt="Placeholder Image"
+      />
+      <div class="content">
+        <h2>Flip & Win!</h2>
+        <p>
+          Boost Your Memory Power
+        </p>
+        <hr size = 5px>
+        <p>
+          
+    
+          Instruction: Flip cards to reveal their hidden symbols, and match pairs to win. Keep track of each card's position to improve your memory skills while having fun!
+        </p>
+      </div>
+    </div>
+
+  </body>
+  
+</html>

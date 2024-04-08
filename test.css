@@ -1,0 +1,59 @@
+/* Card Component Styles */
+.card {
+  width: 300px;
+  max-width: 100%;
+  background-color: rgb(250, 185, 247);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  top: 150%;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card .content {
+  padding: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+.card p {
+  color: #1b0707;
+  font-size: 14px;
+}
+
+/* Expanding and Contracting Animation */
+/* Expanding and Contracting Animation */
+@keyframes expandContract {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Adjust the scale for a smoother effect */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card:hover {
+  animation: expandContract 1.5s ease-in-out infinite; /* Increase the duration to slow down the animation */
+}
