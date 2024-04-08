@@ -1,0 +1,181 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.modal-window {
+  position: fixed;
+  top: 50%;
+  right: 20px; /* Adjust the value to your preference */
+  transform: translate(0, -50%);
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+@font-face {
+  font-family: "san serif";
+  font-style: normal;
+  font-weight: normal;
+
+  src: url("../fonts/Baloo-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Baloo", sans-serif;
+}
+
+.body {
+  /* background-color: #e6adf1; */
+  background: linear-gradient(
+    135deg,
+    #03001e 0%,
+    #c384ec 0%,
+    #f398db 50%,
+    #fdeff9 100%
+  );
+
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+  grid-template-rows: 1fr 20fr 1fr;
+  grid-template-areas:
+    " . . . "
+    " . c . "
+    " . . . ";
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.slight-header {
+  font-size: 1.4rem;
+}
+
+.big-header {
+  font-size: 1.7rem;
+}
+
+.gray-text {
+  font-weight: light;
+  color: gray;
+}
+
+.main {
+  border-radius: 20px;
+  position: relative;
+  grid-area: c;
+  background-color: #f9f9ff;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+}
+
+.input-general {
+  display: block;
+  margin: 20px 0px;
+  width: 10vw;
+}
+
+.action-button {
+  width: 10.5vw;
+  background-color: #e6adf1;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.2s linear 0s;
+  margin: 10px 0px;
+}
+
+.action-button:hover {
+  background-color: #e6adf1;
+}
+
+.logo-wrapper {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.logout-wrapper {
+  padding: 5px;
+  padding-left: 11%;
+  width: 50%;
+  margin-bottom: 20px;
+  transition: 0.2s linear 0s;
+  border-radius: 10px;
+}
+
+.logout-wrapper:hover {
+  background-color: #e6adf1;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logout {
+  width: 60%;
+  padding-left: 20%;
+}
+
+p {
+  margin: 0;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.gender-wrapper {
+  display: flex;
+  width: 60%;
+  margin: 20px;
+}
+
+.gender-wrapper > label {
+  flex-grow: 0.4;
+}
+
+.welcome-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  overflow: hidden;
+}
+
+.welcome-banner {
+  height: 140%;
+  border-radius: 20px;
+}
+
+@keyframes pulseRed {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: white;
+  }
+}
