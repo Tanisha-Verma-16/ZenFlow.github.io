@@ -354,9 +354,9 @@ body {
   display: flex;
 }
 .add-event {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+ position: absolute;
+  top: 10rem;
+  right: 18.5rem;
   width: 40px;
   height: 40px;
   display: flex;
@@ -369,7 +369,6 @@ body {
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
-  top: 8px;
 }
 .add-event:hover {
   opacity: 1;
